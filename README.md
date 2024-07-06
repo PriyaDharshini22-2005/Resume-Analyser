@@ -10,9 +10,9 @@ This project is a web application for uploading and analyzing resume files. It c
 
 ## Technologies Used
 
-- *Backend:* Django, fitz (PyMuPDF), Google Generative AI
-- *Frontend:* React, Axios
-- *API Integration:* Google Generative AI
+- **Backend:** Django, fitz (PyMuPDF), Google Generative AI
+- **Frontend:** React, Axios
+- **API Integration:** Google Generative AI
 
   ### Resume Analysis App Packages Documentation
 
@@ -20,73 +20,73 @@ This document provides a comprehensive list of packages used in the Resume Analy
 
 #### Backend Packages
 
-1. *Django*
-   - *Version*: 3.2 or higher
-   - *Description*: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
-   - *Installation*: pip install django
+1. **Django**
+   - **Version**: 3.2 or higher
+   - **Description**: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+   - **Installation**: `pip install django`
 
-2. *PyMuPDF (fitz)*
-   - *Version*: 1.18.19 or higher
-   - *Description*: PyMuPDF is a Python binding for MuPDF, which is a lightweight PDF and XPS viewer.
-   - *Installation*: pip install pymupdf
+2. **PyMuPDF (fitz)**
+   - **Version**: 1.18.19 or higher
+   - **Description**: PyMuPDF is a Python binding for MuPDF, which is a lightweight PDF and XPS viewer.
+   - **Installation**: `pip install pymupdf`
 
-3. *Google Generative AI*
-   - *Version*: 1.0.0 or higher
-   - *Description*: A library for interacting with Google Generative AI services.
-   - *Installation*: pip install google-generativeai
+3. **Google Generative AI**
+   - **Version**: 1.0.0 or higher
+   - **Description**: A library for interacting with Google Generative AI services.
+   - **Installation**: `pip install google-generativeai`
 
-4. *Setuptools*
-   - *Version*: Latest
-   - *Description*: Easily download, build, install, upgrade, and uninstall Python packages.
-   - *Installation*: pip install setuptools
+4. **Setuptools**
+   - **Version**: Latest
+   - **Description**: Easily download, build, install, upgrade, and uninstall Python packages.
+   - **Installation**: `pip install setuptools`
 
-5. *Twine*
-   - *Version*: Latest
-   - *Description*: Utility for publishing Python packages on PyPI.
-   - *Installation*: pip install twine
+5. **Twine**
+   - **Version**: Latest
+   - **Description**: Utility for publishing Python packages on PyPI.
+   - **Installation**: `pip install twine`
 
 #### Frontend Packages
 
-1. *React*
-   - *Version*: 17.0.2 or higher
-   - *Description*: A JavaScript library for building user interfaces.
-   - *Installation*: npm install react
+1. **React**
+   - **Version**: 17.0.2 or higher
+   - **Description**: A JavaScript library for building user interfaces.
+   - **Installation**: `npm install react`
 
-2. *React DOM*
-   - *Version*: 17.0.2 or higher
-   - *Description*: This package serves as the entry point to the DOM and server renderers for React.
-   - *Installation*: npm install react-dom
+2. **React DOM**
+   - **Version**: 17.0.2 or higher
+   - **Description**: This package serves as the entry point to the DOM and server renderers for React.
+   - **Installation**: `npm install react-dom`
 
-3. *React Scripts*
-   - *Version*: 4.0.3 or higher
-   - *Description*: This package includes scripts and configuration used by Create React App.
-   - *Installation*: npm install react-scripts
+3. **React Scripts**
+   - **Version**: 4.0.3 or higher
+   - **Description**: This package includes scripts and configuration used by Create React App.
+   - **Installation**: `npm install react-scripts`
 
-4. *Axios*
-   - *Version*: 0.21.1 or higher
-   - *Description*: Promise-based HTTP client for the browser and node.js.
-   - *Installation*: npm install axios
+4. **Axios**
+   - **Version**: 0.21.1 or higher
+   - **Description**: Promise-based HTTP client for the browser and node.js.
+   - **Installation**: `npm install axios`
 
-5. *Node Package Manager (npm)*
-   - *Version*: Latest
-   - *Description*: A package manager for JavaScript, included with Node.js installation.
-   - *Installation*: Comes with Node.js
+5. **Node Package Manager (npm)**
+   - **Version**: Latest
+   - **Description**: A package manager for JavaScript, included with Node.js installation.
+   - **Installation**: Comes with Node.js
 
-6. *Yarn*
-   - *Version*: Latest
-   - *Description*: Fast, reliable, and secure dependency management.
-   - *Installation*: npm install -g yarn
+6. **Yarn**
+   - **Version**: Latest
+   - **Description**: Fast, reliable, and secure dependency management.
+   - **Installation**: `npm install -g yarn`
 
 
 ### Backend Setup Instructions
 
-1. *Install Python Packages*
+1. **Install Python Packages**
 
-   sh
+   ```sh
    pip install -r requirements.txt
 
 
-cd backend
+```cd backend
 python manage.py runserver
 cd frontend
 npm install
@@ -106,87 +106,87 @@ npm start
 
 ### Backend Setup
 
-1. *Clone the repository:*
+1. **Clone the repository:**
     bash
     git clone https://github.com/yourusername/resume-analysis-app.git
     cd resume-analysis-app
     
 
-2. *Create and activate a virtual environment:*
+2. **Create and activate a virtual environment:**
     bash
     python -m venv env
     source env/bin/activate  # On Windows, use env\Scripts\activate
     
 
-3. *Install backend dependencies:*
+3. **Install backend dependencies:**
     bash
     pip install -r requirements.txt
     
 
-4. *Add your Google Generative AI API key:*
-    - Create a file named constant.py in the backend directory.
+4. **Add your Google Generative AI API key:**
+    - Create a file named `constant.py` in the backend directory.
     - Add your API key to this file:
         python
         API_KEY = 'your_api_key_here'
         
 
-5. *Run database migrations:*
+5. **Run database migrations:**
     bash
     python manage.py migrate
     
 
-6. *Run the Django server:*
+6. **Run the Django server:**
     bash
     python manage.py runserver
     
 
 ### Frontend Setup
 
-1. *Navigate to the frontend directory:*
+1. **Navigate to the frontend directory:**
     bash
     cd frontend
     
 
-2. *Install frontend dependencies:*
+2. **Install frontend dependencies:**
     bash
     npm install  # Or yarn install if you use yarn
     
 
-3. *Run the React development server:*
+3. **Run the React development server:**
     bash
     npm start  # Or yarn start
     
 
 ### Accessing the Application
 
-- Open your web browser and go to http://127.0.0.1:3000 to access the React frontend.
-- The React app will make requests to the Django backend running at http://127.0.0.1:8000.
+- Open your web browser and go to `http://127.0.0.1:3000` to access the React frontend.
+- The React app will make requests to the Django backend running at `http://127.0.0.1:8000`.
 
 
 ## API Endpoints
 
-- *POST /upload_file/*: Endpoint to upload and analyze a resume file.
+- **`POST /upload_file/`**: Endpoint to upload and analyze a resume file.
 
 ## Code Explanation
 
 ### Backend
 
-- *views.py*:
-    - The index function renders the main HTML page.
-    - The upload_file function handles file uploads, processes the resume text, and interacts with the Google Generative AI API.
+- **`views.py`**:
+    - The `index` function renders the main HTML page.
+    - The `upload_file` function handles file uploads, processes the resume text, and interacts with the Google Generative AI API.
 
-- *constant.py*:
+- **`constant.py`**:
     - Contains the Google Generative AI API key.
 
-- *parse_resume_text*:
+- **`parse_resume_text`**:
     - A helper function to parse the resume text and extract information like name, experience, and education.
 
 ### Frontend
 
-- *App.js*:
+- **`App.js`**:
     - Main React component that renders the file upload form and handles the submission.
 
-- *services/api.js*:
+- **`services/api.js`**:
     - Contains functions to interact with the backend API using Axios.
 
 ## Running Locally
@@ -201,7 +201,7 @@ npm start
     npm start  # Or yarn start
     
 
-3. Open your browser and navigate to http://127.0.0.1:3000.
+3. Open your browser and navigate to `http://127.0.0.1:3000`.
 
 ## Contributors ✨
 
@@ -221,3 +221,9 @@ Thanks go to these wonderful people :
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Devakesavan/Resume-Analyser/commit/339b80c30d36134b6ef9e3270f448aea0d301d55) file for details.
